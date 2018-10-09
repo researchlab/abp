@@ -31,6 +31,12 @@ func TestBubbleSort2(t *testing.T) {
 
 }
 
+func TestBubbleSortByLogarithm(t *testing.T) {
+	if err := utils.Logarithm(100, 100, 5000, BubbleSort); err != nil {
+		t.Fatal(err)
+	}
+}
+
 func benchmarkBubbleSort(n int, b *testing.B) {
 	list := utils.GetArrayOfSize(n)
 	for i := 0; i < b.N; i++ {
