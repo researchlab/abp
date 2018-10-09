@@ -10,7 +10,6 @@ func TestRead(t *testing.T) {
 		if i%300 == 0 {
 			array := GetArrayOfSize(i)
 			fmt.Println("array = ", len(array))
-
 			if len(array) != i {
 				fmt.Println(array)
 				t.Error()

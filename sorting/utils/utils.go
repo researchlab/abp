@@ -16,6 +16,7 @@ func GetArrayOfSize(n int) []int {
 		// handle error
 		return nil
 	}
+
 	fname := filepath.Join(p.Dir, "IntegerArray.txt")
 	f, _ := os.Open(fname)
 	defer f.Close()
