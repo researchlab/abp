@@ -1,7 +1,7 @@
 package insert
 
 func InsertSort(data []int) {
-	if data == nil || len(data) < 2 {
+	if len(data) < 2 {
 		return
 	}
 	for i := 1; i < len(data); i++ {

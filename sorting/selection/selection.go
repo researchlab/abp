@@ -1,7 +1,7 @@
 package selection
 
 func SelectionSort(data []int) {
-	if len(data) < 2 || data == nil {
+	if len(data) < 2 {
 		return
 	}
 	//遍历所有元素

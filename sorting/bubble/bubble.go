@@ -1,7 +1,7 @@
 package bubble
 
 func BubbleSort(data []int) {
-	if data == nil || len(data) < 2 {
+	if len(data) < 2 {
 		return
 	}
 	for e := len(data) - 1; e > 0; e-- {
