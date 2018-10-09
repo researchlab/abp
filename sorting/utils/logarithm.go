@@ -20,8 +20,9 @@ func Logarithm(maxSize, maxValue, maxTime int, funcSort func(arr []int)) error {
 }
 
 func generateRandomArray(maxSize, maxValue int) []int {
-	arr := make([]int, maxSize)
-	for i := 0; i < maxSize; i++ {
+	length := rand.Intn(maxSize + 1)
+	arr := make([]int, length)
+	for i := 0; i < length; i++ {
 		arr = append(arr, ((maxValue+1)*rand.Intn(maxValue) - maxValue*rand.Intn(maxValue)))
 	}
 	return arr
