@@ -29,6 +29,7 @@ func Merge(data []int, L, mid, R int) {
 			help = append(help, data[left])
 			left++
 		} else {
+			//当遇到第一个左边的数比右边大时，则从左边的这个数开始到左边数组结束中所有数字就都会比右边这个数字大了
 			for i := left; i <= mid-left+1; i++ {
 				log.Printf("reverse-order %v %v\n", data[i], data[right])
 			}
