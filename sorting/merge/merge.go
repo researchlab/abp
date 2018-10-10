@@ -18,7 +18,7 @@ func processSort(data []int, L, R int) {
 	if L == R {
 		return
 	}
-	mid := L + ((R - L) >> 1)   // L+R中点的位置 (L+R)/2
+	mid := L + ((R - L) >> 1)   // L+R中点的位置 (L+R)/2  可能会引发L+R溢出， 所以 L+((R-L)>>1) 则不会溢出， 同时: 位运算 R >> 1 比 R/2 算数运算要好
 	processSort(data, L, mid)   // T(N/2)
 	processSort(data, mid+1, R) //T(N/2)
 	merge(data, L, mid, R)      // O(N)
