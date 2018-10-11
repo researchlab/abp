@@ -2,7 +2,7 @@
 
 
 ### sorting
-| 算法| en-wiki|zh-wiki|
+| algorithms| en-wiki|zh-wiki|
 |---|---|---|
 | [BubbleSort](https://github.com/researchlab/algorithms-cs/tree/master/sorting/bubble)| [en-wiki](https://en.wikipedia.org/wiki/Bubble_sort) |[zh-wiki](https://zh.wikipedia.org/wiki/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F)|
 |[SelectionSort](https://github.com/researchlab/algorithms-cs/tree/master/sorting/selection)| [en-wiki](https://en.wikipedia.org/wiki/Selection_sort) |[zh-wiki](https://zh.wikipedia.org/wiki/%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F)|
