@@ -4,7 +4,7 @@ func ArrayToMaxHeap(data []int) {
 	if len(data) < 2 {
 		return
 	}
-	for i := 2; i < len(data); i++ {
+	for i := 0; i < len(data); i++ {
 		swap(data, i)
 	}
 }
