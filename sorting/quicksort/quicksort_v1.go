@@ -1,5 +1,8 @@
 package quicksort
 
+//递归快排修改为非递归快排 实现思路是手工处理每次分点less和more的入栈和出栈
+//先实现一个stack 将第一次less,more入栈
+//循环stack 当符合入栈条件时则入栈，直到栈空结束循环,此时排序也结束
 func QuickSortV1(data []int) {
 	if len(data) < 2 {
 		return
@@ -13,10 +16,10 @@ func quickSortV1(data []int, L, R int) {
 		po := s.Pop()
 		if po.Less < po.More {
 			less, more := partitionV1(data, po.Less, po.More)
-			if less > po.Less { //返回的左边界少于上一层的左边界, 将返回的左边界至上一层的左边界中间的'右边区域'压栈'
+			if less > po.Less { //返回的左边界大于上一层的左边界, 将返回的左边界至上一层的左边界中间的'右边区域'压栈'
 				s.Push(&Point{Less: po.Less, More: less - 1})
 			}
-			if more < po.More {
+			if more < po.More { //返回的右边界少于上一层的右边界，则返回的右边界与上一层右边界中间的'左边区域'压栈'
 				s.Push(&Point{Less: more + 1, More: po.More})
 			}
 		}
