@@ -4,7 +4,11 @@ package less
 //时间复杂度要为O(N)，空间复杂度为O(1)
 
 func LessV1(arr []int, num int) (int, int) {
-	less, cur, more := -1, 0, len(arr)
+	return partition(arr, 0, len(arr)-1, num)
+}
+
+func partition(arr []int, L, R, num int) (int, int) {
+	less, cur, more := L-1, L, R+1
 	for cur < more {
 		if arr[cur] == num {
 			cur++
