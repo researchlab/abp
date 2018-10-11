@@ -1,5 +1,7 @@
 package quicksort
 
+import "math/rand"
+
 // 指定数组最后一个值x 作为划分值，递归遍历数组将小于等于x的都放到数组左边，大于的都放到左边;
 func QuickSort(data []int) {
 	if len(data) < 2 {
@@ -10,6 +12,8 @@ func QuickSort(data []int) {
 
 func quickSort(data []int, L, R int) {
 	if L < R {
+		randN := L + rand.Intn(1)*(R-L+1)
+		data[randN], data[R] = data[R], data[randN]
 		less, more := partition(data, L, R)
 		quickSort(data, L, less-1)
 		quickSort(data, more+1, R)
