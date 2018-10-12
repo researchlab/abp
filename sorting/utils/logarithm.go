@@ -28,6 +28,19 @@ func GenerateRandomArray(maxSize, maxValue int) []int {
 	return arr
 }
 
+func GenerateRandomIntArray(maxSize, maxValue int) []int {
+	length := rand.Intn(maxSize + 1)
+	arr := make([]int, length)
+	for i := 0; i < length; i++ {
+		val := -1
+		for val < 0 || val > maxValue {
+			val = ((maxValue+1)*rand.Intn(maxValue) - maxValue*rand.Intn(maxValue))
+		}
+		arr = append(arr, val)
+	}
+	return arr
+}
+
 func CopyArray(arr []int) []int {
 	_arr := make([]int, len(arr))
 	for k, v := range arr {
