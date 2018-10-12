@@ -8,8 +8,8 @@ import (
 
 func Logarithm(maxSize, maxValue, maxTime int, funcSort func(arr []int)) error {
 	for i := 0; i < maxTime; i++ {
-		arr1 := generateRandomArray(maxSize, maxValue)
-		arr2 := copyArray(arr1)
+		arr1 := GenerateRandomArray(maxSize, maxValue)
+		arr2 := CopyArray(arr1)
 		funcSort(arr1)
 		sort.Ints(arr2)
 		if err := isEqual(arr1, arr2); err != nil {
@@ -19,7 +19,7 @@ func Logarithm(maxSize, maxValue, maxTime int, funcSort func(arr []int)) error {
 	return nil
 }
 
-func generateRandomArray(maxSize, maxValue int) []int {
+func GenerateRandomArray(maxSize, maxValue int) []int {
 	length := rand.Intn(maxSize + 1)
 	arr := make([]int, length)
 	for i := 0; i < length; i++ {
@@ -28,7 +28,7 @@ func generateRandomArray(maxSize, maxValue int) []int {
 	return arr
 }
 
-func copyArray(arr []int) []int {
+func CopyArray(arr []int) []int {
 	_arr := make([]int, len(arr))
 	for k, v := range arr {
 		_arr[k] = v
