@@ -4,7 +4,7 @@ import "testing"
 
 func TestQueue(t *testing.T) {
 	arr := []int{1, 2, 5, 1, 3}
-	nqueue := NewQueue()
+	nqueue := New()
 	for _, v := range arr {
 		nqueue.Push(v)
 	}

@@ -10,8 +10,8 @@ type Queue struct {
 	end  *Node
 }
 
-func NewQueue() *Queue {
-	return &Queue{nil, nil}
+func New() *Queue {
+	return &Queue{}
 }
 
 func (p *Queue) Push(data interface{}) {
