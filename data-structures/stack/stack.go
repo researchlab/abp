@@ -9,7 +9,7 @@ type Stack struct {
 	head *Node
 }
 
-func NewStack() *Stack {
+func New() *Stack {
 	return &Stack{head: &Node{data: nil, next: nil}}
 }
 
@@ -25,4 +25,12 @@ func (p *Stack) Pop() (interface{}, bool) {
 	}
 	p.head = p.head.next
 	return n.data, true
+}
+
+//返回栈顶元素
+func (p *Stack) Peek() (interface{}, bool) {
+	if p.head == nil {
+		return nil, false
+	}
+	return p.head.data, true
 }

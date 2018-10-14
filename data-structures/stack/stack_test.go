@@ -4,7 +4,7 @@ import "testing"
 
 func TestStack(t *testing.T) {
 	arr := []int{1, 3, 5, 2, 7}
-	s := NewStack()
+	s := New()
 	for _, v := range arr {
 		s.Push(v)
 	}
