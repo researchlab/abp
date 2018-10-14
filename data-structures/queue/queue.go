@@ -14,6 +14,7 @@ func New() *Queue {
 	return &Queue{}
 }
 
+//入队列
 func (p *Queue) Push(data interface{}) {
 	n := &Node{data: data, next: nil}
 
@@ -26,6 +27,7 @@ func (p *Queue) Push(data interface{}) {
 	p.end = n
 }
 
+//出队列
 func (p *Queue) Pop() (interface{}, bool) {
 	if p.head == nil {
 		return nil, false
@@ -36,4 +38,12 @@ func (p *Queue) Pop() (interface{}, bool) {
 		p.end = nil
 	}
 	return data, true
+}
+
+//返回队首元素值
+func (p *Queue) Peek() (interface{}, bool) {
+	if p.head == nil {
+		return nil, false
+	}
+	return p.head.data, true
 }
