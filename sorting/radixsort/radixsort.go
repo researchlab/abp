@@ -61,5 +61,7 @@ func radixSort(arr []int, begin, end, digit int) {
 }
 
 func getDigit(x, d int) int {
+	//radix :=10
+	//(x / int(math.Pow10(d-10))) % radix
 	return (x / int(math.Pow10(d-1))) % 10
 }
