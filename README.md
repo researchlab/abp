@@ -11,4 +11,3 @@
 |[QuickSort](https://github.com/researchlab/algorithms-cs/tree/master/sorting/quicksort)| [en-wiki](https://en.wikipedia.org/wiki/Quicksort) |[zh-wiki](https://zh.wikipedia.org/wiki/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F)|
 |[HeapSort](https://github.com/researchlab/algorithms-cs/tree/master/sorting/heap)| [en-wiki](https://en.wikipedia.org/wiki/Heapsort) |[zh-wiki](https://zh.wikipedia.org/wiki/%E5%A0%86%E6%8E%92%E5%BA%8F)|
 |[BucketSort](https://github.com/researchlab/algorithms-cs/tree/master/sorting/bucketsort)| [en-wiki](https://en.wikipedia.org/wiki/Bucket_sort) |[zh-wiki](https://zh.wikipedia.org/wiki/%E6%A1%B6%E6%8E%92%E5%BA%8F)
-
