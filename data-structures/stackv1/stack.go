@@ -41,3 +41,11 @@ func (p *Stack) Push(el interface{}) {
 	prepend[0] = el
 	p.stack = append(prepend, p.stack...)
 }
+
+//返回栈顶元素
+func (p *Stack) Peek() (interface{}, bool) {
+	if len(p.stack) == 0 {
+		return nil, false
+	}
+	return p.stack[0], true
+}
