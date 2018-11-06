@@ -22,3 +22,4 @@
      - [lru/lfu/arc](https://github.com/bluele/gcache)
      - [lfu](https://github.com/mtchavez/lfu)
      - [lfu](https://github.com/dgrijalva/lfu-go)
+		 - [http://dhruvbird.com/lfu.pdf](http://dhruvbird.com/lfu.pdf)
