@@ -1,4 +1,4 @@
-# algorithms-cs
+# Algorithms Best Practices (ABP™)
 
 
 ### sorting
