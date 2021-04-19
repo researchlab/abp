@@ -3,7 +3,7 @@ package selection
 import (
 	"testing"
 
-	"github.com/researchlab/algorithms-cs/sorting/utils"
+	"github.com/researchlab/abp/sorting/utils"
 )
 
 func TestSelectionSort(t *testing.T) {

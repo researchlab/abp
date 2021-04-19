@@ -3,7 +3,7 @@ package heap
 import (
 	"testing"
 
-	"github.com/researchlab/algorithms-cs/sorting/utils"
+	"github.com/researchlab/abp/sorting/utils"
 )
 
 func TestHeapSort(t *testing.T) {

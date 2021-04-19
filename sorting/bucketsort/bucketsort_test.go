@@ -4,7 +4,7 @@ import (
 	"sort"
 	"testing"
 
-	"github.com/researchlab/algorithms-cs/sorting/utils"
+	"github.com/researchlab/abp/sorting/utils"
 )
 
 func TestBucketSort(t *testing.T) {

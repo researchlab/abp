@@ -3,7 +3,7 @@ package insert
 import (
 	"testing"
 
-	"github.com/researchlab/algorithms-cs/sorting/utils"
+	"github.com/researchlab/abp/sorting/utils"
 )
 
 func TestInsertSort(t *testing.T) {

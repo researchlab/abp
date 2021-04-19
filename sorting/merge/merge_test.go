@@ -3,7 +3,7 @@ package merge
 import (
 	"testing"
 
-	"github.com/researchlab/algorithms-cs/sorting/utils"
+	"github.com/researchlab/abp/sorting/utils"
 )
 
 func TestMerge(t *testing.T) {

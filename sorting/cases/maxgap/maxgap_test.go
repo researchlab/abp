@@ -3,7 +3,7 @@ package maxgap
 import (
 	"testing"
 
-	"github.com/researchlab/algorithms-cs/sorting/utils"
+	"github.com/researchlab/abp/sorting/utils"
 )
 
 func TestMaxGap(t *testing.T) {
